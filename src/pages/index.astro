@@ -1,17 +1,43 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="R.I.P. Thaecia">
+  <main
+    class="bg-zinc-200 dark:bg-zinc-800 w-full min-h-screen flex flex-col items-center justify-center">
+    <h1 class="text-9xl font-bold text-zinc-800 dark:text-zinc-100">
+      R.I.P. Thaecia
+    </h1>
+    <p class="text-2xl italic text-zinc-800/75 dark:text-zinc-100/75">
+      You will be remembered by all Thaepoliticians.
+    </p>
+    <div class="text-zinc-800/30 dark:text-zinc-100/30">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-skull-icon lucide-skull"
+        ><path d="m12.5 17-.5-1-.5 1h1z"></path><path
+          d="M15 22a1 1 0 0 0 1-1v-1a2 2 0 0 0 1.56-3.25 8 8 0 1 0-11.12 0A2 2 0 0 0 8 20v1a1 1 0 0 0 1 1z"
+        ></path><circle cx="15" cy="12" r="1"></circle><circle
+          cx="9"
+          cy="12"
+          r="1"></circle></svg
+      >
+    </div>
+  </main>
+</Layout>
+
+<!-- <style>
+  main {
+    background-image: repeating-linear-gradient(315deg, --alpha(var(--color-cyan-500) / 25%) 0, --alpha(var(--color-cyan-500) / 25%) 4px, transparent 0, transparent 10%);
+	bg-size: 10px 10px;
+	background-attachment: fixed;
+  }
+</style> -->
